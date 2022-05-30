@@ -6,7 +6,7 @@ from quantile_regression_chain import quantileRegression_chain as QReg_C
 
 
 def main(options):
-
+    print("start training")
     stream = open(options.config,'r')
     inp=yaml.safe_load(stream)
 
@@ -31,7 +31,7 @@ def main(options):
     if not os.path.exists(weightsDir + 'data_weights_{}_{}_{}.pkl'.format(
         options.EBEE, options.variable, str(options.quantile).replace('.', 'p'))):
         qRC.trainOnData(options.variable,weightsDir=weightsDir)
-
+    print("end training")
 
 if __name__ == "__main__":
 

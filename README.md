@@ -4,7 +4,20 @@
 TODO
 
 ## Installation
-After cloning the repository and entering it, run:
+Create a new conda env.
+```
+conda create -p <path to install conda env> python=3.6
+```
+Activate your new conda env.
+```
+conda activate <path to install conda env> 
+```
+You may need to source the root setup, like:
+```
+source <rootdir>/bin/thisroot.sh
+```
+
+Then you can cloning the repository and entering it, run:
 ```bash
 $ python setup.py install
 ```

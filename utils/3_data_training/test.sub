@@ -1,0 +1,7 @@
+executable              = test.sh 
+arguments               = $(ClusterId)$(ProcId)
+output                  = condor_output/test.$(ClusterId).$(ProcId).out
+error                   = condor_output/test.$(ClusterId).$(ProcId).err
+log                     = condor_output/test.$(ClusterId).log
++JobFlavour           = "microcentury"
+queue 1

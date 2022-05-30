@@ -25,7 +25,7 @@ def main(args):
 
     qRC.loadROOT(
             '{}/outputMC.root'.format(sourceDir),
-            'tagAndProbeDumper/trees/DYJetsToLL_amcatnloFXFX_13TeV_All',
+            'tagAndProbeDumper/trees/DYToLL_13TeV_All',
             'df_mc_{}'.format(qRC.EBEE),
             'tagPt>40 and tagR9>0.8 and mass>80 and mass<100 and probeChIso03<6 and tagScEta>-2.1 and tagScEta<2.1 and probePassEleVeto==0',
             split
@@ -41,7 +41,7 @@ def main(args):
     if EBEE == 'EB':
         qRC.loadROOT(
                 '{}/outputMC.root'.format(sourceDir),
-                'tagAndProbeDumper/trees/DYJetsToLL_amcatnloFXFX_13TeV_All',
+                'tagAndProbeDumper/trees/DYToLL_13TeV_All',
                 'df_mc_{}_Iso'.format(qRC.EBEE),
                 'tagPt>40 and tagR9>0.8 and mass>80 and mass<100 and probeSigmaIeIe<0.0105 and tagScEta>-2.1 and tagScEta<2.1 and probePassEleVeto==0',
                 split
@@ -56,7 +56,7 @@ def main(args):
     elif EBEE == 'EE':
         qRC.loadROOT(
                 '{}/outputMC.root'.format(sourceDir),
-                'tagAndProbeDumper/trees/DYJetsToLL_amcatnloFXFX_13TeV_All',
+                'tagAndProbeDumper/trees/DYToLL_13TeV_All',
                 'df_mc_{}_Iso'.format(qRC.EBEE),
                 'tagPt>40 and tagR9>0.8 and mass>80 and mass<100 and probeSigmaIeIe<0.028 and tagScEta>-2.1 and tagScEta<2.1 and probePassEleVeto==0',
                 split
