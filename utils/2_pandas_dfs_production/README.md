@@ -1,5 +1,5 @@
 # Make Dataframes
-
+Before you runing the script, you need to rename your NTuples with the name:```outputData.root```,```outputMC.root```
 Create input dataframes for the training.
 In the following:
 ```bash
@@ -15,7 +15,6 @@ we have the following arguments:
 - ```-D``` specifies the directory where the files ```outputData.root``` and ```outputMC.root``` are expected to be found;
 - ```-O``` specifies the output directory for the pandas dataframes
 - ```-s``` amount of train vs test data (0.5 means the dataset is split in half)
-Before you runing the script, you need to rename your NTuples with the name:```outputData.root```,```outputMC.root```
 Running the above command twice (once with ```-E EB``` and once with ```-E EE```) will produce the following dataframes, which are all the ones we need:
 ```
 df_data_EB_Iso_test.h5 
