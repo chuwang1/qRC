@@ -9,6 +9,8 @@ submits one job per regressor to be trained, using 4700000 events.
 
 Remember to change both ```workDir``` and ```weightsDir``` inside the config files stored in ```config```, respectively to the path to the directory where the pandas dataframes are and to the output directory for the trained regressors.
 
+The ```workDir``` is the directory where you save the DataFrames. the ```weightsDir``` may be the output of the training. 
+
 To check which regressors are left, run:
 ```bash
 $ python check_output_names.py -d path-to-weightsDir
